@@ -1,5 +1,7 @@
 # Django URL example for namespace and urls
 
+![screenshot](readme_assets/screenshot.png)
+
 Loop through list of articles.
 Create link to article detail.
 
