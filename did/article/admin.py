@@ -1,4 +1,8 @@
 from django.contrib import admin
-
 from .models import Article
-admin.site.register(Article)
+
+class ArticleAdmin(admin.ModelAdmin):
+    search_fields = ['title', 'body']
+    list_display = ['title', 'updated']
+
+admin.site.register(Article, ArticleAdmin)
