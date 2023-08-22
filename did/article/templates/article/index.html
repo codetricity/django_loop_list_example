@@ -7,11 +7,18 @@
 </head>
 <body>
     <h1>Article Listing</h1>
-    <ul>
+    <table>
+        <tr>
+        <th>title </th>
+            <th> date </th>
+        </tr>
+    
         {% for item in items  %}
-        <li><a href="{% url 'article:detail' item.id %}">{{item.title}}</a></li>
+
+        <tr><td><a href="{% url 'article:detail' item.id %}">{{item.title}}</a></td><td> {{ item.updated }}</td></tr>
 
         {% endfor %}
-    </ul>
+ 
+    <table>
 </body>
 </html>
