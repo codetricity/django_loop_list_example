@@ -5,6 +5,12 @@
 Loop through list of articles.
 Create link to article detail.
 
+[Slug tutorial on W3 schools](https://www.w3schools.com/django/django_slug_field.php)
+
+```python
+https://www.w3schools.com/django/django_slug_field.php
+```
+
 ## search
 
 ![search](readme_assets/search.png)
