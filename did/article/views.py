@@ -7,10 +7,6 @@ def home(request):
         request, 'article/index.html',
         {'items': items})
 
-def detail(request, id):
-    item = get_object_or_404(Article, id=id)
-
-    response = f"<p>title is: {item.title}</p>"
-    response += f"<p>id is: {item.id} </p>"
-
-    return HttpResponse(response)
+def detail(request, post):
+    item = get_object_or_404(Article, slug=post)
+    return render(request, 'article/detail.html', {'item': item})
